@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { Heading, Stack } from "@chakra-ui/react";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -10,11 +12,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to my portfolio!</h1>
-
-        <p className={styles.description}>Web developer</p>
-      </main>
+      <Stack spacing="40px" align="center">
+        <Heading
+          as="h1"
+          size="4xl"
+          bgGradient="linear(to-l, gray.100, gray.600)"
+          bgClip="text"
+        >
+          Welcome to my portfolio!
+        </Heading>
+        <Heading
+          as="h2"
+          size="3xl"
+          bgGradient="linear(to-l, gray.100, gray.600)"
+          bgClip="text"
+        >
+          Web developer
+        </Heading>
+      </Stack>
     </div>
   );
 }
