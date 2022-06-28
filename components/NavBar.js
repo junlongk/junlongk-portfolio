@@ -1,4 +1,5 @@
 import { Flex, HStack, Button } from "@chakra-ui/react";
+
 import Link from "next/link";
 
 export default function NavBar() {
@@ -11,7 +12,7 @@ export default function NavBar() {
     >
       <Link href="/" passHref>
         <Button as="a" bg="gray.100">
-          JUNLONGK
+          Home
         </Button>
       </Link>
       <HStack>

@@ -1,18 +1,29 @@
-import { Flex, Box, Text, Heading } from "@chakra-ui/react";
-import Image from "next/image";
+import { Flex, Box, Wrap, Heading, Text, Avatar, Icon } from "@chakra-ui/react";
+import { DiJavascript1 } from "react-icons/di";
+import { FaReact } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 
 export default function about() {
   return (
     <Flex
+      flexDirection="row-reverse"
       justifyContent="space-around"
       alignItems="center"
       p="40px"
-      m="0 auto"
-      gap="10"
+      gap="5"
       color="gray.50"
     >
-      <Box border="1px #fff solid" p="50px">
-        <Heading as="h1" size="3xl" m="10px">
+      <Flex flexDirection="column">
+        <Avatar size="2xl" src="/images/profile.jpg" />
+        <Text fontSize="3xl">Jun Long</Text>
+        <Wrap justify="center">
+          <Icon as={DiJavascript1} fontSize="20px" />
+          <Icon as={FaReact} fontSize="20px" />
+          <Icon as={SiNextdotjs} fontSize="20px" />
+        </Wrap>
+      </Flex>
+      <Box border="1px #fff solid" p="40px">
+        <Heading as="h1" size="2xl" m="10px">
           About Me
         </Heading>
         <Text m="10px">
@@ -22,18 +33,18 @@ export default function about() {
         </Text>
         <Text m="10px">
           I was learning web development during my free time and I realised that
-          I enjoy learning new technologies and creating stuff. Hence I took the
-          leap of faith to do this full time.
+          learning new technologies and being able to create stuff through
+          coding was what I am really interested in. Hence, that explains the
+          career switch.
         </Text>
         <Text m="10px">
-          My current skillset is React, NextJS. I am planning to touch on the
-          the M, E &amp; N (MongoDB, ExpressJS, NodeJS) in the MERN stack next
-          so that I will be able to create a full stack application.
+          My current skillset is React, NextJS. I am planning to explore more on
+          the backend as well in order to be able to create full stack
+          applications. I have interest in blockchain technology as well as I
+          believe it will play a bigger part in shaping the technology in the
+          coming years.
         </Text>
       </Box>
-      <Flex flexDirection="column" border="1px #fff solid">
-        Photo and description
-      </Flex>
     </Flex>
   );
 }
