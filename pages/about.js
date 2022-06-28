@@ -14,7 +14,7 @@ export default function about() {
       color="gray.50"
     >
       <Flex flexDirection="column">
-        <Avatar size="2xl" src="/images/profile.jpg" />
+        <Avatar size="2xl" />
         <Text fontSize="3xl">Jun Long</Text>
         <Wrap justify="center">
           <Icon as={DiJavascript1} fontSize="20px" />

@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <Box bgColor="gray.900">
+    <Box>
       <Head>
         <title>Jun Long&apos;s Portfolio</title>
         <meta name="description" content="Web Development Portfolio" />
@@ -24,6 +24,9 @@ export default function Layout({ children }) {
         div#__next,
         div#__next > div {
           height: 100%;
+        }
+        body {
+          background-color: #171923;
         }
       `}</style>
     </Box>

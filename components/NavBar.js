@@ -9,25 +9,26 @@ export default function NavBar() {
       alignItems="center"
       gap="5"
       className="NavBar"
+      p="20px"
     >
       <Link href="/" passHref>
-        <Button as="a" bg="gray.100">
+        <Button as="a" variant="outline" colorScheme="cyan">
           Home
         </Button>
       </Link>
       <HStack>
         <Link href="/about" passHref>
-          <Button as="a" bg="gray.400">
+          <Button as="a" variant="outline" colorScheme="cyan">
             About
           </Button>
         </Link>
         <Link href="/blog" passHref>
-          <Button as="a" bg="gray.400">
+          <Button as="a" variant="outline" colorScheme="cyan">
             Blog
           </Button>
         </Link>
         <Link href="/projects" passHref>
-          <Button as="a" bg="gray.400">
+          <Button as="a" variant="outline" colorScheme="cyan">
             Projects
           </Button>
         </Link>
