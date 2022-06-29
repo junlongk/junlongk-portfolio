@@ -6,18 +6,18 @@ import { SiNextdotjs } from "react-icons/si";
 export default function about() {
   return (
     <Flex
-      flexDirection="row"
-      alignItems="center"
-      justifyContents="center"
-      flexWrap="wrap-reverse"
+      direction="row"
+      align="center"
+      justify="center"
+      wrap="wrap-reverse"
       m="40px 20px"
       color="gray.50"
     >
       <Box
-        border="1px #fff solid"
+        border="1px #4A5568 solid"
         p={["0px", "10px", "25px", "40px"]}
         m="20px"
-        width={["100%", "100%", "65%", "70%"]}
+        w={["100%", "100%", "65%", "70%"]}
       >
         <Heading as="h1" size="2xl" m="20px">
           About Me
@@ -42,10 +42,10 @@ export default function about() {
         </Text>
       </Box>
       <Flex
-        flexDirection="column"
-        alignItems="center"
+        direction="column"
+        align="center"
         m="20px"
-        width={["100%", "100%", "20%", "20%"]}
+        w={["100%", "100%", "20%", "20%"]}
       >
         <Avatar size="2xl" />
         <Text fontSize="3xl">Jun Long</Text>

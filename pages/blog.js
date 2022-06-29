@@ -3,9 +3,9 @@ import { Flex, Heading, Text } from "@chakra-ui/react";
 export default function blog() {
   return (
     <Flex
-      flexDirection="column"
-      justifyContent="space-around"
-      alignItems="center"
+      direction="column"
+      justify="space-around"
+      align="center"
       color="gray.50"
       p="40px"
     >
