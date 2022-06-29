@@ -18,13 +18,6 @@ export default function Layout({ children }) {
       <main>{children}</main>
       <Footer />
       <style global jsx>{`
-        html,
-        body,
-        body > div:first-child,
-        div#__next,
-        div#__next > div {
-          height: 100%;
-        }
         body {
           background-color: #171923;
         }

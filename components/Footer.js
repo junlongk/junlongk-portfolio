@@ -1,12 +1,11 @@
 import { Box, Wrap, IconButton, Text } from "@chakra-ui/react";
 
 import Link from "next/link";
-import { DiGithubBadge } from "react-icons/di";
-import { GrLinkedinOption } from "react-icons/gr";
+import { GrGithub, GrLinkedinOption, GrTwitter } from "react-icons/gr";
 
 export default function Footer() {
   return (
-    <Box mt={20} mb={6}>
+    <Box mt="100px" mb="20px">
       <Wrap justify="center" spacing="20px">
         <Link href="https://github.com/junlongk" passHref>
           <IconButton
@@ -17,7 +16,7 @@ export default function Footer() {
             colorScheme="teal"
             aria-label="Github Link"
             fontSize="20px"
-            icon={<DiGithubBadge />}
+            icon={<GrGithub />}
           />
         </Link>
         <Link href="https://www.linkedin.com/in/keejunlong" passHref>
@@ -32,8 +31,26 @@ export default function Footer() {
             icon={<GrLinkedinOption />}
           />
         </Link>
+        <Link href="https://twitter.com/junlongk" passHref>
+          <IconButton
+            as="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline"
+            colorScheme="cyan"
+            aria-label="Twitter Link"
+            fontSize="20px"
+            icon={<GrTwitter />}
+          />
+        </Link>
       </Wrap>
-      <Text fontSize="sm" textAlign="center" mt={4} pb={4} color="gray.50">
+      <Text
+        fontSize="sm"
+        textAlign="center"
+        mt="16px"
+        pb="10px"
+        color="gray.100"
+      >
         <span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> 2022 Jun Long
         K.
       </Text>
