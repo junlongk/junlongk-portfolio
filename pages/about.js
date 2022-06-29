@@ -17,7 +17,7 @@ export default function about() {
         border="1px #fff solid"
         p={["0px", "10px", "25px", "40px"]}
         m="20px"
-        width={["100%", "100%", "60%", "70%"]}
+        width={["100%", "100%", "65%", "70%"]}
       >
         <Heading as="h1" size="2xl" m="20px">
           About Me

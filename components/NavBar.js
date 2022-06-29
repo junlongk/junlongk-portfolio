@@ -4,13 +4,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <Flex
-      className="NavBar"
-      justifyContent="space-around"
-      alignItems="center"
-      gap="5"
-      m="20px"
-    >
+    <Flex justifyContent="space-around" alignItems="center" gap="5" m="20px">
       <Link href="/" passHref>
         <Button as="a" variant="outline" colorScheme="cyan">
           Home

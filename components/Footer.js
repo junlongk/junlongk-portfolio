@@ -5,7 +5,7 @@ import { GrGithub, GrLinkedinOption, GrTwitter } from "react-icons/gr";
 
 export default function Footer() {
   return (
-    <Box mt="100px" mb="20px">
+    <Box mt="50px" mb="20px">
       <Wrap justify="center" spacing="20px">
         <Link href="https://github.com/junlongk" passHref>
           <IconButton
