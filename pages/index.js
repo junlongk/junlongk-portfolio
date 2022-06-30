@@ -26,7 +26,7 @@ const heading2 = {
 
 export default function Home() {
   return (
-    <Stack spacing="100px" m="100px 20px">
+    <Stack spacing="100px" m="40px 20px">
       <Heading
         as="h1"
         size="3xl"

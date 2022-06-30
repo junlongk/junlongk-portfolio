@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Container, Flex, Heading, Text } from "@chakra-ui/react";
 
 export default function blog() {
   return (
@@ -6,16 +6,24 @@ export default function blog() {
       direction="column"
       justify="space-around"
       align="center"
-      color="gray.50"
-      p="40px"
+      color="gray.300"
+      m="40px"
     >
       <Heading as="h1" size="2xl" m="10px">
         Blog
       </Heading>
-      <Text>
-        This will be where I will be sharing my thoughts and my experience of
-        doing a career switch and self learning everything.
-      </Text>
+      <Container>
+        <Text fontSize="sm" align="center" m="20px">
+          A space for me to share my experience of being a self taught web
+          developer, as well as tutorials for problems that I have managed to
+          solve and which I think will benefit others by sharing.
+        </Text>
+      </Container>
+      <Container>
+        <Text fontSize="xl" align="center" m="20px">
+          Watch this space! ;)
+        </Text>
+      </Container>
     </Flex>
   );
 }

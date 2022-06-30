@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Container, Flex, Heading, Text } from "@chakra-ui/react";
 
 import ProjectCard from "../components/ProjectCard";
 
@@ -73,17 +73,19 @@ export default function projects() {
       direction="column"
       justify="space-around"
       align="center"
-      color="gray.50"
-      p="40px"
+      color="gray.300"
+      m="40px"
     >
       <Heading as="h1" size="2xl" m="10px">
         Projects
       </Heading>
-      <Text>
-        This will be where I will be showcasing the web apps that I have
-        created.
-      </Text>
-      <Flex direction="row" wrap="wrap">
+      <Container>
+        <Text fontSize="sm" align="center" m="20px">
+          These consist of projects done during online courses, as while as
+          personal projects
+        </Text>
+      </Container>
+      <Flex direction="row" justify="center" wrap="wrap">
         {projectCards}
       </Flex>
     </Flex>
