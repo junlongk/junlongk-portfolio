@@ -10,17 +10,20 @@ export default function NavBar() {
           Home
         </Button>
       </Link>
+
       <HStack>
         <Link href="/about" passHref>
           <Button as="a" variant="outline" colorScheme="cyan">
             About
           </Button>
         </Link>
+
         <Link href="/blog" passHref>
           <Button as="a" variant="outline" colorScheme="cyan">
             Blog
           </Button>
         </Link>
+
         <Link href="/projects" passHref>
           <Button as="a" variant="outline" colorScheme="cyan">
             Projects

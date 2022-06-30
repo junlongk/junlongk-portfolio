@@ -11,7 +11,7 @@ export default function about() {
       justify="center"
       wrap="wrap-reverse"
       m="40px 20px"
-      color="gray.50"
+      color="gray.300"
     >
       <Box
         border="1px #4A5568 solid"
