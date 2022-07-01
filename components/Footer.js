@@ -1,5 +1,4 @@
 import { Box, Wrap, IconButton, Text } from "@chakra-ui/react";
-
 import Link from "next/link";
 import { GrGithub, GrLinkedinOption, GrTwitter } from "react-icons/gr";
 

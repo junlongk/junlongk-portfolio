@@ -26,10 +26,18 @@ const heading2 = {
 
 export default function Home() {
   return (
-    <Stack spacing="100px" m="40px 20px">
+    <Stack
+      spacing={{ base: "40px", md: "100px" }}
+      m="20px"
+      minW={{ base: "330px", sm: "450px", md: "720px", lg: "960px" }}
+    >
       <Heading
         as="h1"
-        size="3xl"
+        size={{
+          base: "lg",
+          sm: "2xl",
+          md: "3xl",
+        }}
         bgGradient="linear(to-l, gray.100, gray.500)"
         bgClip="text"
         align="left"
@@ -39,7 +47,11 @@ export default function Home() {
       </Heading>
       <Heading
         as="h1"
-        size="lg"
+        size={{
+          base: "sm",
+          sm: "md",
+          md: "lg",
+        }}
         bgGradient="linear(to-l, gray.200, gray.800)"
         bgClip="text"
         align="right"
