@@ -27,7 +27,7 @@ const heading2 = {
 export default function Home() {
   return (
     <Stack
-      spacing={{ base: "40px", md: "100px" }}
+      spacing={{ base: "20px", md: "100px" }}
       m="20px"
       minW={{ base: "330px", sm: "450px", md: "720px", lg: "960px" }}
     >

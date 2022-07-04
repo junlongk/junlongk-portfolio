@@ -9,9 +9,17 @@ export default function NavBar() {
       align="center"
       gap={["5px", "20px", "50px", "100px"]}
       m="20px"
+      bg="gray.800"
+      borderRadius="5px"
+      backdropFilter="initial"
+      backdropBlur="10px"
+      opacity="0.7"
+      position="sticky"
+      top="0"
+      zIndex="1"
     >
       <Link href="/" passHref>
-        <Button as="a" variant="outline" colorScheme="cyan">
+        <Button as="a" variant="ghost" colorScheme="cyan">
           Home
         </Button>
       </Link>

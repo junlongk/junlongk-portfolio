@@ -7,11 +7,11 @@ export default function about() {
   return (
     <Flex
       direction="row"
-      align="center"
       justify="center"
+      align="center"
       wrap="wrap-reverse"
       m="40px 20px"
-      color="gray.300"
+      maxW={{ base: "330px", sm: "450px", md: "720px", lg: "960px" }}
     >
       <Box
         border="1px #4A5568 solid"
@@ -34,11 +34,11 @@ export default function about() {
           career switch.
         </Text>
         <Text m="20px">
-          My current skillset is React, NextJS. I am planning to explore more on
-          the backend as well in order to be able to create full stack
-          applications. I have interest in blockchain technology as well as I
-          believe it will play a bigger part in shaping the technology in the
-          coming years.
+          My current skillset is React, in particular Next.JS with vanilla
+          Javascript. I am planning to explore on the backend as well in order
+          to have a better understanding of full stack applications. I have
+          interest in blockchain technology as well as I believe blockchain will
+          have a big part to play in shaping the technology in the coming years.
         </Text>
       </Box>
       <Flex
