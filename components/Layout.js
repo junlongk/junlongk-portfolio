@@ -20,7 +20,7 @@ export default function Layout({ children }) {
         align="center"
       >
         <NavBar />
-        <Box>{children}</Box>
+        <Box fontFamily="Nunito">{children}</Box>
         <Footer />
       </Flex>
     </>

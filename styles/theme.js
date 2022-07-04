@@ -17,5 +17,10 @@ export const theme = extendTheme({
         },
       },
     },
+    Heading: {
+      baseStyle: {
+        fontFamily: "Nunito",
+      },
+    },
   },
 });

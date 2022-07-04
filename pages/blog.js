@@ -20,13 +20,7 @@ export default function blog() {
         </Text>
       </Container>
       <Container>
-        <Text
-          fontSize="xl"
-          align="center"
-          m="20px"
-          border="1px #4A5568 solid"
-          p="15px"
-        >
+        <Text fontSize="xl" align="center" m="20px" p="15px">
           Watch this space! ;)
         </Text>
       </Container>

@@ -14,7 +14,6 @@ export default function about() {
       maxW={{ base: "330px", sm: "450px", md: "720px", lg: "960px" }}
     >
       <Box
-        border="1px #4A5568 solid"
         p={["0px", "10px", "25px", "40px"]}
         m="20px"
         w={["100%", "100%", "65%", "70%"]}
