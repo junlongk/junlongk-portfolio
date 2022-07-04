@@ -1,13 +1,13 @@
-import { Flex, Button } from "@chakra-ui/react";
+import { Flex, Button, HStack } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function NavBar() {
   return (
     <Flex
       direction="row"
-      justify="space-around"
+      justify="space-evenly"
       align="center"
-      gap={["5px", "20px", "50px", "100px"]}
+      gap={["0px", "20px", "50px", "100px"]}
       m="20px"
       p="5px"
       borderRadius="5px"
@@ -18,27 +18,29 @@ export default function NavBar() {
       zIndex="1"
     >
       <Link href="/" passHref>
-        <Button as="a" variant="ghost" colorScheme="cyan">
-          Home
+        <Button as="a" variant="ghost" color="cyan.400">
+          JUNLONG K.
         </Button>
       </Link>
-      <Link href="/about" passHref>
-        <Button as="a" variant="ghost" colorScheme="cyan">
-          About
-        </Button>
-      </Link>
+      <HStack>
+        <Link href="/about" passHref>
+          <Button as="a" variant="ghost" color="cyan.600">
+            About
+          </Button>
+        </Link>
 
-      <Link href="/blog" passHref>
-        <Button as="a" variant="ghost" colorScheme="cyan">
-          Blog
-        </Button>
-      </Link>
+        <Link href="/blog" passHref>
+          <Button as="a" variant="ghost" color="cyan.600">
+            Blog
+          </Button>
+        </Link>
 
-      <Link href="/projects" passHref>
-        <Button as="a" variant="ghost" colorScheme="cyan">
-          Projects
-        </Button>
-      </Link>
+        <Link href="/projects" passHref>
+          <Button as="a" variant="ghost" color="cyan.600">
+            Projects
+          </Button>
+        </Link>
+      </HStack>
     </Flex>
   );
 }

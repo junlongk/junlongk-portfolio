@@ -34,10 +34,10 @@ export default function about() {
         </Text>
         <Text m="20px">
           My current skillset is React, in particular Next.JS with vanilla
-          Javascript. I am planning to explore on the backend as well in order
-          to have a better understanding of full stack applications. I have
-          interest in blockchain technology as well as I believe blockchain will
-          have a big part to play in shaping the technology in the coming years.
+          Javascript. I am planning to explore on the backend in order to have a
+          better understanding of full stack applications. I have interest in
+          blockchain technology as well as I believe blockchain will have a big
+          part to play in shaping the technology in the coming years.
         </Text>
       </Box>
       <Flex
