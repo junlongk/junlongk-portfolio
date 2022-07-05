@@ -1,4 +1,4 @@
-import { Flex, Button, HStack } from "@chakra-ui/react";
+import { Flex, Button, ButtonGroup } from "@chakra-ui/react";
 import Link from "next/link";
 
 export default function NavBar() {
@@ -7,40 +7,44 @@ export default function NavBar() {
       direction="row"
       justify="space-evenly"
       align="center"
-      gap={["0px", "20px", "50px", "100px"]}
+      gap={{ base: "5px", sm: "10px", md: "50px", lg: "100px" }}
       m="20px"
-      p="5px"
       borderRadius="5px"
       backdropFilter="auto"
       backdropBlur="10px"
       position="sticky"
-      top="0"
+      top="5px"
       zIndex="1"
     >
       <Link href="/" passHref>
-        <Button as="a" variant="ghost" color="cyan.400">
+        <Button
+          as="a"
+          size={{ base: "sm", sm: "md" }}
+          variant="ghost"
+          color="cyan.400"
+        >
           JUNLONG K.
         </Button>
       </Link>
-      <HStack>
+      <ButtonGroup size={{ base: "xs", sm: "sm" }} isAttached variant="ghost">
         <Link href="/about" passHref>
-          <Button as="a" variant="ghost" color="cyan.600">
+          <Button as="a" color="cyan.600">
             About
           </Button>
         </Link>
 
         <Link href="/blog" passHref>
-          <Button as="a" variant="ghost" color="cyan.600">
+          <Button as="a" color="cyan.600">
             Blog
           </Button>
         </Link>
 
         <Link href="/projects" passHref>
-          <Button as="a" variant="ghost" color="cyan.600">
+          <Button as="a" color="cyan.600">
             Projects
           </Button>
         </Link>
-      </HStack>
+      </ButtonGroup>
     </Flex>
   );
 }

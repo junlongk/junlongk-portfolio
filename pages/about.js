@@ -24,7 +24,7 @@ export default function about() {
         <Text m="20px">
           Hey there! I am Jun Long from Singapore. I was previously a Project
           Engineer in the industry of industrial equipments and I am currently
-          pursuing web development full time.
+          pursuing web development full-time.
         </Text>
         <Text m="20px">
           I was learning web development during my free time and I realised that
@@ -46,7 +46,7 @@ export default function about() {
         m="20px"
         w={["100%", "100%", "20%", "20%"]}
       >
-        <Avatar size="2xl" />
+        <Avatar size={{ base: "2xl", lg: "3xl" }} src="images/profile.jpg" />
         <Text fontSize="3xl">Jun Long</Text>
         <Wrap>
           <Icon as={DiJavascript1} fontSize="20px" />
