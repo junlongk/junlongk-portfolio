@@ -3,7 +3,7 @@ import { DiJavascript1 } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
-export default function about() {
+export default function About() {
   return (
     <Flex
       direction="row"

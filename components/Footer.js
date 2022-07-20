@@ -44,7 +44,7 @@ export default function Footer() {
         </Link>
       </Wrap>
       <Text
-        fontSize="sm"
+        fontSize="xs"
         textAlign="center"
         mt="16px"
         pb="10px"

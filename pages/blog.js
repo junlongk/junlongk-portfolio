@@ -1,6 +1,6 @@
 import { Container, Flex, Heading, Text } from "@chakra-ui/react";
 
-export default function blog() {
+export default function Blog() {
   return (
     <Flex
       direction="column"

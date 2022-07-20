@@ -1,4 +1,4 @@
-import { Container, Flex, Heading, Text } from "@chakra-ui/react";
+import { Container, Flex, Heading, Text, Divider } from "@chakra-ui/react";
 
 import ProjectCard from "../components/ProjectCard";
 import projectData from "../components/projectData";
@@ -14,7 +14,7 @@ const projectCards = projectData.map((project) => {
   );
 });
 
-export default function projects() {
+export default function Projects() {
   return (
     <Flex
       direction="column"
@@ -32,9 +32,9 @@ export default function projects() {
       <Heading as="h1" size="xl" m="10px">
         Personal Projects
       </Heading>
-      <Container>
-        <Text fontSize="sm" align="center" m="20px">
-          These are my own personal projects.
+      <Container mb="20px">
+        <Text fontSize="sm" align="center">
+          These are my personal projects.
         </Text>
       </Container>
       <ProjectCard
@@ -43,12 +43,13 @@ export default function projects() {
         title="NFT Report"
         description="Web app for showing details of user's NFT collection built using Next.js"
       />
+      <Divider my="20px" />
       <Heading as="h1" size="xl" m="10px">
         Course Projects
       </Heading>
-      <Container>
-        <Text fontSize="sm" align="center" m="20px">
-          These consist of projects done during online courses.
+      <Container mb="20px">
+        <Text fontSize="sm" align="center">
+          These are projects done for online courses.
         </Text>
       </Container>
       <Flex direction="row" justify="center" wrap="wrap">
